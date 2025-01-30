@@ -1,0 +1,9 @@
+:root {
+  /*colors*/
+  --primary-color: rgba(58, 186, 181, 1);
+  --title-color: #1d1d20;
+  --paragraph-colors: #52525a;
+  /*measurements*/
+  --container-max-width: 80%;
+  --p-size: 1.25rem;
+}

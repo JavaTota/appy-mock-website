@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ZA+Guides&display=swap");
+
+@import url("./root.css");
+
+/*Global styling*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+/*General element styling*/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: hsl(178, 52%, 48%, 0.8);
+  cursor: pointer;
+}
+
+/*General navbar styling*/
+
+.logo-nav-container,
+.nav-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--container-max-width);
+  justify-content: space-between;
+}
+
+/*hidden list behavior and styling*/
+
+nav {
+  width: var(--container-max-width);
+}
+
+.nav-menu-hidden-par {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-hidden-list {
+  position: absolute;
+  top: 80px;
+  left: 270px;
+  height: 200px;
+  height: 60px;
+  width: 150px;
+  box-shadow: 1px 3px 10px rgb(128, 128, 128, 0.5);
+  border-radius: 3px;
+  border: 10px;
+}
+
+.nav-menu-hidden-list:hover {
+  cursor: pointer;
+}
+.nav-menu-hidden-list-item {
+  margin: 5px 0 10px 10px;
+  font-size: small;
+}
+
+.nav-menu-hidden:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/*Styling single navbar elements*/
+
+.nav-menu-list {
+  position: relative;
+  height: 100px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.nav-menu {
+  color: var(--paragraph-colors);
+  margin-top: 10px;
+}
+
+.nav-menu-item {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-hidden-svg {
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+.nav-button-container {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-button {
+  height: 40px;
+  width: 130px;
+  font-size: medium;
+  padding: 3px 7px;
+}
+
+/*styling circles behind phone svgs*/
+
+.header-top-right-svg {
+  position: absolute;
+  right: 10px;
+  top: -30px;
+}
+/*Header general styling*/
+
+.header-content {
+  display: flex;
+  position: relative;
+}
+
+/*Header-left general styling*/
+
+.header-left {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*header-left items styling*/
+
+.header-content .header-left h1 {
+  font-size: 100px;
+}
+
+.header-content .header-left p {
+  font-size: 20px;
+  color: var(--paragraph-colors);
+  font-weight: 350;
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header-content .header-left input {
+  height: 48px;
+  width: 270px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 0.2px solid;
+  border-color: var(--paragraph-colors);
+}
+
+.header-content .header-left input:focus {
+  border: 1px solid var(--paragraph-colors);
+  outline: none;
+}
+
+.header-content .header-left button {
+  height: 48px;
+  border-radius: 7px;
+  width: 150px;
+}
+.header-left-ul {
+  margin-top: 20px;
+}
+
+.header-left-li {
+  margin: 10px 5px;
+  font-weight: 200;
+}
+
+/*Header-right general styling*/
+
+.header-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header-image-out {
+  position: absolute;
+  width: 300px;
+}
+
+.header-image-in {
+  position: absolute;
+  width: 270px;
+  height: 550px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.header-right a {
+  position: relative;
+  left: -42%;
+  top: -3%;
+}
+
+/*Number cards*/
+
+section .number-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 1px 3px 10px rgb(128, 128, 128, 0.5);
+  height: 150px;
+  width: 250px;
+  background-color: white;
+}
+
+.number-card-container {
+  margin-top: 100px;
+}
+
+section .number-card h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+section .number-card p {
+  font-weight: 300;
+}
+
+/*handling gradient in header*/
+
+main {
+  background: linear-gradient(
+    to bottom right,
+    white 70%,
+    hsl(240, 6%, 97%) 100%
+  );
+  padding-bottom: 20px;
+}
