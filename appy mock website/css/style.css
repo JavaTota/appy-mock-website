@@ -67,18 +67,19 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .nav-menu-hidden-list {
   position: absolute;
-  top: 80px;
+  top: 70px;
   left: 270px;
-  height: 200px;
   height: 60px;
   width: 150px;
   box-shadow: 1px 3px 10px rgb(128, 128, 128, 0.5);
   border-radius: 3px;
   border: 10px;
+  display: none;
 }
 
 .nav-menu-hidden-list:hover {
@@ -93,8 +94,8 @@ nav {
   cursor: pointer;
 }
 
-.hide {
-  display: none;
+.display {
+  display: block;
 }
 
 /*Styling single navbar elements*/
@@ -148,14 +149,18 @@ nav {
 
 .header-top-right-svg {
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: -30px;
 }
 /*Header general styling*/
 
 .header-content {
   display: flex;
-  position: relative;
+  width: var(--container-max-width);
+}
+
+main {
+  min-width: var(--container-max-width);
 }
 
 /*Header-left general styling*/
