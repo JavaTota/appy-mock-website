@@ -40,14 +40,6 @@ button:hover {
   cursor: pointer;
 }
 
-/*General navbar styling*/
-
-.logo-nav-container,
-.nav-menu-list {
-  display: flex;
-  gap: 40px;
-}
-
 .wrapper {
   display: flex;
   margin-left: auto;
@@ -56,10 +48,21 @@ button:hover {
   justify-content: space-between;
 }
 
+/*General navbar styling*/
+
+.logo-nav-container,
+.nav-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
 /*hidden list behavior and styling*/
 
-nav {
-  width: var(--container-max-width);
+.logo-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--container-max-width);
 }
 
 .nav-menu-hidden-par {
@@ -156,11 +159,8 @@ nav {
 
 .header-content {
   display: flex;
-  width: var(--container-max-width);
-}
-
-main {
-  min-width: var(--container-max-width);
+  justify-content: center;
+  align-items: center;
 }
 
 /*Header-left general styling*/
@@ -278,4 +278,71 @@ main {
     hsl(240, 6%, 97%) 100%
   );
   padding-bottom: 20px;
+}
+
+/* horizontal heading */
+
+.horizontal-container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 80px 80px;
+}
+
+.horizontal-container-title h1 {
+  font-size: 60px;
+}
+
+.horizontal-container-title span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/*horizontal content*/
+
+.new-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.horizontal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  overflow: hidden;
+  max-width: var(--container-max-width);
+}
+
+.horizontal-content {
+  display: flex;
+  gap: 240px;
+  margin-left: 270px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.horizontal-ul {
+  gap: 240px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.played {
+  animation-play-state: paused;
 }
