@@ -152,8 +152,9 @@ button:hover {
 
 .header-top-right-svg {
   position: absolute;
-  right: 0px;
+  right: 300px;
   top: -30px;
+  width: 200px;
 }
 /*Header general styling*/
 
@@ -161,6 +162,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 /*Header-left general styling*/
@@ -222,6 +224,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   position: relative;
+  right: -100px;
 }
 
 .header-image-out {
@@ -288,7 +291,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 80px 80px;
+  margin: 80px 300px;
 }
 
 .horizontal-container-title h1 {
@@ -301,48 +304,32 @@ main {
 }
 
 /*horizontal content*/
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+.swiper-wrapper {
+  width: 100vw;
+}
 
-.new-wrapper {
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-}
-.horizontal-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  overflow: hidden;
-  max-width: var(--container-max-width);
 }
 
-.horizontal-content {
-  display: flex;
-  gap: 240px;
-  margin-left: 270px;
-  width: max-content;
-  animation: scroll 20s linear infinite;
-}
-
-.horizontal-ul {
-  gap: 240px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.played {
-  animation-play-state: paused;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

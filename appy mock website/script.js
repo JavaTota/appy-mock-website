@@ -10,14 +10,19 @@ hiddenList.addEventListener("mouseout", () => {
   hiddenUl.classList.toggle("display");
 });
 
-const horUl = document.querySelector(".horizontal-content");
-
-function delayAnimation() {
-  horUl.classList.add("played");
-  setTimeout(() => {
-    horUl.classList.remove("played");
-    setTimeout(delayAnimation, 5000);
-  }, 10000);
-}
-
-setTimeout(delayAnimation, 1000);
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

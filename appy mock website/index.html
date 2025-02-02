@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock Appy</title>
@@ -106,7 +115,7 @@
 
       <div class="header-top-right-svg">
         <svg
-          width="400"
+          width="500"
           height="502"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -309,101 +318,41 @@
       </section>
     </main>
 
-    <div class="wrapper">
-      <section class="new-wrapper">
-        <div class="horizontal-container">
-          <div class="horizontal-container-title">
-            <h1>From rough design files, to powerful products</h1>
-            <span
-              >Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.</span
-            >
-          </div>
-          <div class="horizontal-content">
-            <ul class="horizontal-ul">
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-01.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-02.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-03.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-04.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-05.jpg"
-                  alt="img"
-                />
-              </li>
-            </ul>
-            <ul class="horizontal-ul">
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-01.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-02.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-03.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-04.jpg"
-                  alt="img"
-                />
-              </li>
-              <li class="horizontal-image">
-                <img
-                  width="600px"
-                  src="https://preview.cruip.com/appy/images/carousel-item-05.jpg"
-                  alt="img"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <div class="horizontal-container-title">
+      <h1>From rough design files, to powerful products</h1>
+      <span
+        >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</span
+      >
     </div>
 
-    <div class="arrows">
-      <div class="arrow-left">⇦</div>
-      <div class="arrow-right">→</div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
+    <!-- reused the container title -->
+
+    <div class="horizontal-container-title">
+      <h1>Turn your ideas into reality in seconds</h1>
+      <span
+        >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</span
+      >
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
   </body>
