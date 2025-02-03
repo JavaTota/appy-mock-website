@@ -341,7 +341,7 @@ main {
   width: 100%;
   background: linear-gradient(
     to top,
-    rgba(235, 235, 235, 0.8) 1570px,
+    rgba(235, 235, 235, 0.8) 600px,
     white 200px
   );
 }
@@ -376,6 +376,9 @@ main {
   border-radius: 5px;
   box-shadow: 2px 3px 3px rgb(128, 128, 128, 0.5);
   padding: 5px;
+}
+.video-list-section-left-item:hover {
+  cursor: pointer;
 }
 
 .active-item {
@@ -416,8 +419,23 @@ main {
 .card-footer div {
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
+.card-footer div {
+  background-color: hsla(0, 0%, 50%, 0.8);
+  width: 70px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.hide {
+  display: none;
+}
 /* Mid page Title */
 
 .title {
