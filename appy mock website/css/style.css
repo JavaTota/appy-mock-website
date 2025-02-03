@@ -82,7 +82,7 @@ button:hover {
   box-shadow: 1px 3px 10px rgb(128, 128, 128, 0.5);
   border-radius: 3px;
   border: 10px;
-  display: none;
+  background-color: black;
 }
 
 .nav-menu-hidden-list:hover {
@@ -276,17 +276,14 @@ section .number-card p {
 /*handling gradient in header*/
 
 main {
-  background: linear-gradient(
-    to bottom right,
-    white 70%,
-    hsl(240, 6%, 97%) 100%
-  );
+  background: linear-gradient(to bottom right, white 20%, #f4f4f5 100%);
   padding-bottom: 20px;
 }
 
 /* horizontal heading */
 .horizontal-section {
   height: 100%;
+  background-color: #fff;
 }
 
 .horizontal-container-title {

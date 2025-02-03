@@ -30,63 +30,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//second list
-
-// const interactivePics = document.getElementsByClassName(
-//   "video-list-section-right-card"
-// );
-
-// const first = document.getElementById("first");
-// const second = document.getElementById("second");
-// const third = document.getElementById("third");
-// const fourth = document.getElementById("fourth");
-// const fifth = document.getElementById("fifth");
-
-// first.addEventListener("click", () => {
-//   interactivePics.classList.remove("hide");
-
-//   [4, 5, 6, 7, 8, 9].forEach((index) => {
-//     if (interactivePics[index]) {
-//       interactivePics[index].classList.add("hide");
-//     }
-//   });
-// });
-// second.addEventListener("click", () => {
-//   interactivePics.classList.remove("hide");
-
-//   [0, 2, 3, 7, 8, 9].forEach((index) => {
-//     if (interactivePics[index]) {
-//       interactivePics[index].classList.add("hide");
-//     }
-//   });
-// });
-// third.addEventListener("click", () => {
-//   interactivePics.classList.remove("hide");
-
-//   [0, 1, 3, 4, 6, 8, 9].forEach((index) => {
-//     if (interactivePics[index]) {
-//       interactivePics[index].classList.add("hide");
-//     }
-//   });
-// });
-// fourth.addEventListener("click", () => {
-//   interactivePics.classList.remove("hide");
-
-//   [0, 1, 2, 4, 5, 7, 8, 9].forEach((index) => {
-//     if (interactivePics[index]) {
-//       interactivePics[index].classList.add("hide");
-//     }
-//   });
-// });
-// fifth.addEventListener("click", () => {
-//   interactivePics.classList.remove("hide");
-//   [0, 1, 2, 3, 5, 6].forEach((index) => {
-//     if (interactivePics[index]) {
-//       interactivePics[index].classList.add("hide");
-//     }
-//   });
-// });
-
 const interactivePics = document.getElementsByClassName(
   "video-list-section-right-card"
 );
