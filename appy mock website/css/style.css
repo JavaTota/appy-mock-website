@@ -417,3 +417,79 @@ main {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+/* Mid page Title */
+
+.title {
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+}
+
+/*Styling the three phones*/
+
+.phones-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: var(--container-max-width);
+}
+
+/*Styling the images*/
+
+.phone-image-one > img,
+.phone-image-two > img,
+.phone-image-three > img {
+  position: absolute;
+}
+
+.phone-image-one > .header-image-in,
+.phone-image-two > .header-image-in,
+.phone-image-three > .header-image-in {
+  top: 165px;
+}
+
+.phone-image-three,
+.phone-image-two,
+.phone-image-one {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phones-section svg {
+  position: absolute;
+  top: 150px;
+}
+
+/* styling the numbers */
+
+.phone span {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  margin: 50px;
+}
+
+.dotted-line {
+  width: 300px;
+  border: 1px dotted transparent;
+  border-image: linear-gradient(to right, white, var(--primary-color), white) 1;
+  position: relative;
+  left: 250px;
+  top: 75px;
+}
